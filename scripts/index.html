@@ -6,16 +6,16 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <!-- Compiled and minified CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-    <title>SuperLumin - LoginPage</title>
+    <title>GameGuidez</title>
 </head>
 
 <body class="grey lighten-3"">
-        
-          <!-- NAVBAR -->
-          <nav class=" z-depth-0 grey lighten-4">
+
+  <!-- NAVBAR -->
+  <nav class=" z-depth-0 grey lighten-4">
     <div class="nav-wrapper container">
         <a href="#" class="brand-logo">
-            <img src="img/andres.png" style="width: 180px; margin-top: 10px;">
+            <img src="img/logo.svg" style="width: 180px; margin-top: 10px;">
         </a>
         <ul id="nav-mobile" class="right hide-on-med-and-down">
             <li class="logged-in" style="display: none;">
@@ -39,10 +39,10 @@
     </nav>
 
     <!-- ADMIN ACTIONS -->
-<form class="center-align admin-actions admin" style="margin: 40px auto; max-width: 300px; display: none;">
-    <input type="email" placeholder="User email" id="admin-email" required />
-    <button class="btn-small yellow darken-2 z-depth-0">Make admin</button>
-</form>
+    <form class="center-align admin-actions admin" style="margin: 40px auto; max-width: 300px; display: none;">
+        <input type="email" placeholder="User email" id="admin-email" required />
+        <button class="btn-small yellow darken-2 z-depth-0">Make admin</button>
+    </form>
 
     <!-- SIGN UP MODAL -->
     <div id="modal-signup" class="modal">
@@ -119,19 +119,19 @@
         </ul>
     </div>
 
-    <script src="https://www.gstatic.com/firebasejs/5.6.0/firebase-app.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/5.6.0/firebase-auth.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/5.6.0/firebase-firestore.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/5.6.0/firebase-functions.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.7.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.7.0/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.7.0/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.7.0/firebase-functions.js"></script>
     <script>
         // Initialize Firebase
         var config = {
-            apiKey: "AIzaSyDlDUJhsP0_uh-YpaRfTOhWZsyY_hLukTw",
-            authDomain: "net-ninja-sandbox.firebaseapp.com",
-            databaseURL: "https://net-ninja-sandbox.firebaseio.com",
-            projectId: "net-ninja-sandbox"
+            apiKey: "AIzaSyBxfhKGnMPUsJ16SINBNfXXDIEy5ClPIEc",
+            authDomain: "supelumin-login-page.firebaseapp.com",
+            databaseURL: "https://supelumin-login-page.firebaseio.com",
+            projectId: "supelumin-login-page",
         };
-        firebase.initializeApp(config);
+        firebase.initializeApp(firebaseConfig);
 
         // make auth and firestore references
         const auth = firebase.auth();
